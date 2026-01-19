@@ -1,0 +1,24 @@
+/* Make sure entire page is dark */
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #1e1e1e; /* dark page */
+  color: #ffffff;            /* default text color */
+  font-family: Arial, sans-serif;
+}
+
+/* Ensure App fills the page and inherits background */
+#root {
+  background-color: #1e1e1e; /* same as body */
+}
+
+.App {
+  background-color: #1e1e1e; /* same as body */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  border-radius: 0; /* remove any card effect for now */
+  min-height: 100vh;
+}

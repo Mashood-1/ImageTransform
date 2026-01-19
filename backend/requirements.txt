@@ -1,0 +1,40 @@
+--extra-index-url https://download.pytorch.org/whl/cpu
+
+# -----------------------------
+# Web framework & server
+# -----------------------------
+fastapi==0.110.0
+uvicorn[standard]==0.27.1
+
+# -----------------------------
+# Image processing
+# -----------------------------
+pillow==10.2.0
+opencv-python-headless==4.9.0.80
+
+# -----------------------------
+# Numerical computing
+# -----------------------------
+numpy==1.26.4
+
+# -----------------------------
+# Deep learning (CPU-only)
+# -----------------------------
+torch==2.2.2+cpu
+torchvision==0.17.2+cpu
+
+# -----------------------------
+# ONNX runtime (u2net.onnx)
+# -----------------------------
+onnxruntime==1.17.3
+
+# -----------------------------
+# Utilities
+# -----------------------------
+requests==2.31.0
+python-multipart==0.0.9
+
+# -----------------------------
+# Background removal
+# -----------------------------
+rembg==2.0.56

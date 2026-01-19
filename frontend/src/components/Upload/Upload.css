@@ -1,0 +1,120 @@
+/* frontend/src/components/Upload/Upload.css */
+
+.upload-container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+/* Preview and result sections */
+.preview-section,
+.result-section {
+  margin-top: 32px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px; /* vertical spacing between children */
+}
+
+/* Original and result images */
+.preview-image {
+  max-width: 90%;       /* smaller than container */
+  max-height: 280px;    /* slightly smaller for multiple previews */
+  object-fit: contain;
+  border-radius: 6px;
+  border: 1px solid #e5e7eb;
+}
+
+/* Horizontal filter buttons container */
+.filter-buttons-container {
+  display: flex;
+  gap: 12px;           /* horizontal spacing between buttons */
+  margin-top: 16px;
+  flex-wrap: wrap;     /* wrap to next line if too many buttons */
+  justify-content: center; /* center buttons horizontally */
+}
+
+/* Action buttons */
+.action-button {
+  padding: 10px 22px;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: #111827;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.action-button:hover:not(:disabled) {
+  background-color: #1f2937; /* subtle hover effect */
+}
+
+.action-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Ensure results are spaced from each other */
+.result-section {
+  margin-bottom: 32px;
+}
+
+/* Optional: headings styling */
+.preview-section h3,
+.result-section h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Dropdown container */
+.action-button-dropdown {
+  position: relative;
+  display: inline-block;
+  margin: 0 5px;
+}
+
+/* Dropdown menu appears on hover */
+.action-button-dropdown .dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 140px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+  padding: 5px 0;
+  border-radius: 6px;
+}
+
+.action-button-dropdown:hover .dropdown-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+/* Style each dropdown item like a button */
+.dropdown-item {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 8px 0;
+  background-color: #4f46e5;  /* same as action-button default */
+  color: white;
+  font-weight: 500;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.dropdown-item:hover {
+  background-color: #6366f1;
+}
+
+.dropdown-item:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

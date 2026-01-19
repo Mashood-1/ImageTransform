@@ -1,0 +1,54 @@
+# --------------------
+# Python
+# --------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.venv
+venv/
+
+# --------------------
+# Python build / test
+# --------------------
+build/
+dist/
+*.egg-info/
+
+# --------------------
+# ML models & weights
+# --------------------
+backend/models/*.pt
+backend/models/*.pth
+backend/models/*.onnx
+
+# --------------------
+# Node / Frontend
+# --------------------
+node_modules/
+dist/
+.vite/
+
+# --------------------
+# OS / Editor
+# --------------------
+.DS_Store
+Thumbs.db
+.vscode/
+
+# --------------------
+# Docker
+# --------------------
+*.log
+
+# --------------------
+# Local ML models (copied into Docker, not Git)
+# --------------------
+backend/models/**/*.pt
+backend/models/**/*.pth
+backend/models/**/*.onnx
+
+# Torch cache
+backend/.torch_hub_cache/
+**/.torch_hub_cache/
